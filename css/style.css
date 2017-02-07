@@ -1,0 +1,6 @@
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background-color: #29568f;
+}
+.navbar-default .navbar-nav > li > a {
+	color:  white;
+}
