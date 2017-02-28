@@ -21,3 +21,4 @@ regions:
 
 libraries:
   - 'teknikcollege/global-styling'
+  - 'teknikcollege/global-scripts'

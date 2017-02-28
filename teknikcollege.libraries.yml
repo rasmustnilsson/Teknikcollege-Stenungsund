@@ -2,3 +2,9 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+global-scripts:
+  version: VERSION
+  js:
+    js/mainjs.js: {}
+  dependencies:
+    - core/jquery
