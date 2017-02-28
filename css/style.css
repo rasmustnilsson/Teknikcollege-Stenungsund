@@ -80,6 +80,7 @@ body {
 .page-header {
     margin-top: 2vw;
     padding: 1vw;
+    border-bottom: none;
 }
 
 .region {
