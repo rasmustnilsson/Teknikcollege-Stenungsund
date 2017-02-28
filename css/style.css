@@ -87,7 +87,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
-.region img {
+#block-logo img {
 	width: 60px;
 	height: auto;
 	margin-left: 10px;
@@ -102,10 +102,6 @@ block-logo {
 	padding: 24px 0px;
 	min-width: 200px;
 	text-align: center;
-}
-
-.views-element-container {  /*tar bort "No front page content has been created yet."*/
-	display: none;
 }
 .region-content {
 	justify-content: center;
@@ -141,9 +137,7 @@ block-logo {
 .programDiv:hover {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.region-content .field {
-	
-} 
+
 h2 {
 	margin: 0;
 	padding: 45px 16px;
