@@ -161,6 +161,7 @@ h2 {
     margin-top: 16px;
 }
 
+<<<<<<< HEAD
 .col-sm-9 {
     width: 100%;
     padding: 0;
@@ -231,4 +232,17 @@ p {
         max-width: 500px;
     }
 }
-
+.flex-direction-nav a {
+	height: 50px;
+}
+.flexslider {
+	border: none;
+	margin: 0;
+}
+.flex-control-nav {
+	bottom: 0;
+	z-index: 2;
+}
+.flexslider .slides img {
+	height: 100%;
+}
