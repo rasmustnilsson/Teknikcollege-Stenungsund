@@ -159,3 +159,18 @@ h2 {
 .divMap:first-of-type {
     margin-top: 16px;
 }
+
+.flex-direction-nav a {
+	height: 50px;
+}
+.flexslider {
+	border: none;
+	margin: 0;
+}
+.flex-control-nav {
+	bottom: 0;
+	z-index: 2;
+}
+.flexslider .slides img {
+	height: 100%;
+}
