@@ -88,19 +88,19 @@ body {
     border-bottom: none;
 }
 
-.region {
+.region-content, .region-navigation-collapsible {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-#block-logo img {
+#block-logo img, #block-block-logo img {
 	width: 60px;
 	height: auto;
 	margin-left: 10px;
 }
 
-block-logo {
-	position: relative;
+#block-logo, #block-block-logo {
+	position: absolute;
 }
 
 #block-teknikcollege-main-menu li a {
@@ -144,7 +144,11 @@ block-logo {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-h2 {
+footer {
+	min-width: 100%;
+}
+
+.programDiv h2 {
 	margin: 0;
 	padding: 45px 16px;
 	text-align: center;
@@ -153,6 +157,7 @@ h2 {
 	padding: 8px;
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.28);
 	background-color: #29568f;
+	text-align: center;
 	color: white;
 	margin-top: 32px;
 
@@ -259,4 +264,14 @@ h2 {
 }
 .flexslider .slides img {
 	height: 100%;
+}
+footer {
+	background-color: #333;
+}
+footer .region {
+	display: flex;
+	justify-content: space-around;
+}
+footer h2 {
+	color: #f1f1f1;
 }
