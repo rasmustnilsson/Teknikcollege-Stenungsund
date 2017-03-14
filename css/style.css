@@ -168,9 +168,10 @@ h2 {
 	margin: 0;
 }
 .flex-control-nav {
-	bottom: 0;
+	bottom: 12px;
 	z-index: 2;
 }
-.flexslider .slides img {
-	height: 100%;
+.flex-control-paging li a {
+	width: 29px;
+	height: 29px;
 }

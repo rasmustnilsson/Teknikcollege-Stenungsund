@@ -8,6 +8,7 @@
 					if(sliderHeight > (windowHeight - menuHeight)){
 						sliderHeight = windowHeight - menuHeight;
 						$(".field-content").height(sliderHeight);
+						$(".field-content").css("overflow", "hidden");
 					}
 				}, 500);
 		}
