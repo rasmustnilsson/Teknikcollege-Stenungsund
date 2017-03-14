@@ -1,3 +1,7 @@
+* {
+	color: #333;
+}
+
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	background-color: #29568f;
 }
@@ -79,23 +83,24 @@ body {
 
 .page-header {
     margin-top: 2vw;
+    margin-left: 390px;
     padding: 1vw;
     border-bottom: none;
 }
 
-.region {
+.region-content, .region-navigation-collapsible {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-#block-logo img {
+#block-logo img, #block-block-logo img {
 	width: 60px;
 	height: auto;
 	margin-left: 10px;
 }
 
-block-logo {
-	position: relative;
+#block-logo, #block-block-logo {
+	position: absolute;
 }
 
 #block-teknikcollege-main-menu li a {
@@ -139,7 +144,11 @@ block-logo {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-h2 {
+footer {
+	min-width: 100%;
+}
+
+.programDiv h2 {
 	margin: 0;
 	padding: 45px 16px;
 	text-align: center;
@@ -148,6 +157,7 @@ h2 {
 	padding: 8px;
 	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.28);
 	background-color: #29568f;
+	text-align: center;
 	color: white;
 	margin-top: 32px;
 
@@ -160,6 +170,87 @@ h2 {
     margin-top: 16px;
 }
 
+.col-sm-9 {
+    width: 100%;
+    padding: 0;
+}
+
+@media screen and (max-width: 850px) {
+    tbody {
+		background-color: aqua;
+    }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+
+.views-row a {
+    font-size: 46px;
+	color: #333;
+}
+
+.views-row a:hover, .views-row a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.views-row:nth-of-type(2n) a:hover, .views-row:nth-of-type(2n) a:focus {
+   color: #D39100;
+}
+
+.views-row p {
+    max-width: 650px;
+	line-height: 1.5;
+	font-size: 16px;
+	padding-top: 8px;
+}
+
+.views-field-field-body {
+	padding-left: 300px;
+}
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    max-width: none;
+    height: none;
+}
+
+.views-row, .view-content, .view, .views-element-container {
+	width: 100%;
+}
+
+.views-row {
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	padding: 100px 150px;
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.views-row:nth-of-type(2n) {
+    background-color: #333;
+	
+}
+.views-row:nth-of-type(2n) p, .views-row:nth-of-type(2n) a {
+	color: #f1f1f1;
+}
+
+@media screen and (max-width: 722px) {
+     .views-row{
+        display: block;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 722px) {
+    .views-row p {
+        padding-left: 0;
+        margin-top: 30px;
+        margin-left: 0;
+        max-width: 500px;
+    }
+}
 .flex-direction-nav a {
 	height: 50px;
 }
@@ -174,4 +265,14 @@ h2 {
 .flex-control-paging li a {
 	width: 29px;
 	height: 29px;
+}
+footer {
+	background-color: #333;
+}
+footer .region {
+	display: flex;
+	justify-content: space-around;
+}
+footer h2 {
+	color: #f1f1f1;
 }
