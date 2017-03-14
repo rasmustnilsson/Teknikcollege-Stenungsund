@@ -2,15 +2,16 @@
 		Drupal.behaviors.myModuleBehavior = {
 			attach: function (centext, settings) {
 				var menuHeight = $(".region-navigation-collapsible").height();
-				setTimeout(function(){
+				$(".field-content img").one("load", function() {
 					var sliderHeight = $(".field-content").height();
-					console.log(sliderHeight);
 					if(sliderHeight > (windowHeight - menuHeight)){
 						sliderHeight = windowHeight - menuHeight;
 						$(".field-content").height(sliderHeight);
 						$(".field-content").css("overflow", "hidden");
-					}
-				}, 500);
+					}					
+				}).each(function() {
+					if(this.complete) $(this).load();
+				});
 		}
 	};
 })(jQuery);
