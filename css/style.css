@@ -179,6 +179,7 @@ footer {
 
 .views-row a {
     font-size: 46px;
+	line-height: 48px;
 	color: #333;
 }
 
@@ -193,9 +194,8 @@ footer {
 
 .views-row p {
     max-width: 650px;
-	line-height: 1.5;
-	font-size: 16px;
-	padding-top: 8px;
+	line-height: 24px;
+    font-size: 16px;
 }
 
 .views-field-field-body {
