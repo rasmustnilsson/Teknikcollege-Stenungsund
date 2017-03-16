@@ -47,7 +47,9 @@ body {
 	padding: 0;
 
 }
-
+#navbar > div {
+	padding: 0;
+}
 .navbar-header {
 	width: 100%;
 }
@@ -73,6 +75,10 @@ body {
 	color: white;
 }
 
+.navbar-nav {
+	margin: 0;
+}
+
 .page-header {
     margin-top: 2vw;
     margin-left: 390px;
@@ -84,6 +90,11 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.region .logo {
+    padding: 0;
+	margin: 0;
+    position: absolute;
 }
 .region .logo img {
 	width: 60px;
@@ -274,4 +285,23 @@ footer .nav li a {
 }
 footer .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
+}
+
+@media (min-width: 768px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media (max-width: 800px) {
+	#block-teknikcollege-main-menu li a {
+		min-width: 190px;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar-nav, #block-teknikcollege-main-menu {
+		width: 100%;
+		margin: 0;
+	}
 }
