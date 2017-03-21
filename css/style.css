@@ -277,21 +277,39 @@ footer {
 }
 footer {
 	background-color: #333;
+	display: flex;
+	justify-content: center;
 }
 footer .region {
-	display: flex;
+	display: inline-flex;
 	justify-content: space-around;
+    	border-bottom: 1px solid white;
+    	padding: 0px 130px;
+	flex-direction: row;
+    	align-items: flex-start;
 }
 footer h2 {
 	color: white;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #d39100;
+	padding-right: 50px;
+	margin: 0;
+	line-height: 32px;
+}
+
+footer li:first-of-type {
+	padding-top: 15px;
 }
 footer li:hover {
 	text-decoration: underline;
 }
+footer nav {
+	padding: 0 32px;
+}
 footer .nav li a {
-	padding: 10px 0;
+	padding: 0;
 	color: #ffffff;
+	font-size: 16px;
+	line-height: 2;
 }
 footer .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
