@@ -166,7 +166,7 @@ footer {
 	background-color: #29568f;
 	text-align: center;
 	color: white;
-	margin-top: 32px;
+	margin: 0;
 
 }
 .divMap {
@@ -297,13 +297,13 @@ footer h2 {
 }
 
 footer li:first-of-type {
-	padding-top: 15px;
+	padding-top: 7px;
 }
 footer li:hover {
 	text-decoration: underline;
 }
 footer nav {
-	padding: 0 32px;
+	padding: 0 32px 20px 0;
 }
 footer .nav li a {
 	padding: 0;
