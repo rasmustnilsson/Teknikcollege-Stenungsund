@@ -37,15 +37,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
+body .container > div {
+	padding-top: 68px;
+}
 #navbar {
     margin: 0;
-	width: auto;
+	width: 100%;
 	max-width: none;
 	border: none;
 	border-radius: 0;
 	padding: 0;
-
+	z-index: 5;
+	position: fixed;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.48);
 }
 #navbar > div {
 	padding: 0;
@@ -212,7 +216,9 @@ footer {
 .views-field-field-body {
 	padding-left: 300px;
 }
-
+.view-om-programmen .views-field-body {
+	padding-left: 300px;
+}
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     max-width: none;
     height: none;
@@ -277,11 +283,12 @@ footer .region {
 	justify-content: space-around;
 }
 footer h2 {
-	color: #f1f1f1;
+	color: #d39100;;
 	border-bottom: 1px solid;
 }
 footer .nav li a {
-		padding: 10px 0;
+	padding: 10px 0;
+	color: #ffffff;
 }
 footer .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
