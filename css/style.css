@@ -37,7 +37,7 @@ body {
     margin: 0;
     padding: 0;
 }
-body .container > div {
+body .main-container > .row {
 	padding-top: 68px;
 }
 #navbar {
