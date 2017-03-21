@@ -333,3 +333,44 @@ footer .nav > li > a:hover, .nav > li > a:focus {
 		margin: 0;
 	}
 }
+
+.footer {
+	margin-top: 0px;
+	border-top: solid #f1f1f1 0px;
+}
+
+.views-row:nth-of-type(2n) {
+	background-color: #f1f1f1;
+}
+
+.views-row:nth-of-type(2n) p {
+	color: #333;
+}
+
+.views-row {
+	background-color: #333;
+}
+
+.views-row p {
+	color: #f1f1f1;
+}
+
+.views-row a {
+	color: #f1f1f1;
+}
+
+.views-row a:hover {
+	color: #D39100;
+}
+
+.views-row:nth-of-type(2n) a {
+	color: #333;
+}
+
+body .main-container > .row {
+	padding-top: 0px;
+}
+
+.main-container .row {
+	border-bottom: none;
+}
