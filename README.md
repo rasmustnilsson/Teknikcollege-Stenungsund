@@ -22,7 +22,7 @@
 
 ##### 1. Kopiera filen til rätt mapp.
     1. cd /var/www/html/themes/teknikcollege
-    2. cp (namnet på filen ex. backup) backup /var/www/
+    2. cp (namnet på filen ex. backup.tar) backup.tar /var/www/
 
 ##### 2. Starta backupen.
-    1. sudo drush archive-restore ./backup --debug --overwrite --p --destination=/var/www/html
+    1. sudo drush archive-restore ./backup.tar --debug --overwrite --p --destination=/var/www/html
