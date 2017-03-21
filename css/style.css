@@ -283,8 +283,11 @@ footer .region {
 	justify-content: space-around;
 }
 footer h2 {
-	color: #d39100;;
+	color: white;
 	border-bottom: 1px solid;
+}
+footer li:hover {
+	text-decoration: underline;
 }
 footer .nav li a {
 	padding: 10px 0;
