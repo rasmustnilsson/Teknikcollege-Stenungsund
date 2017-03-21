@@ -151,7 +151,7 @@ body .main-container {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-footer {
+div.footer {
 	min-width: 100%;
 }
 
@@ -303,7 +303,8 @@ footer li:hover {
 	text-decoration: underline;
 }
 footer nav {
-	padding: 0 32px 20px 0;
+	padding: 0 90px 32px;
+	min-width: 250px;
 }
 footer .nav li a {
 	padding: 0;
