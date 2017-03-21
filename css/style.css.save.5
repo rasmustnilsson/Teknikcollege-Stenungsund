@@ -37,7 +37,7 @@ body {
     margin: 0;
     padding: 0;
 }
-body .main-container {
+body .main-container > .row {
 	padding-top: 68px;
 }
 #navbar {
@@ -48,12 +48,13 @@ body .main-container {
 	border-radius: 0;
 	padding: 0;
 	z-index: 5;
+	position: fixed;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.48);
 }
 #navbar > div {
 	padding: 0;
 }
-.navbar-header {
+.navbar->header {
 	width: 100%;
 }
 .navbar-default .navbar-nav > li > a {
@@ -150,6 +151,10 @@ body .main-container {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+footer {
+	min-width: 100%;
+}
+
 .programDiv h2 {
 	margin: 0;
 	padding: 45px 16px;
@@ -161,7 +166,7 @@ body .main-container {
 	background-color: #29568f;
 	text-align: center;
 	color: white;
-	margin: 0;
+	margin-top: 32px;
 
 }
 .divMap {
@@ -279,9 +284,9 @@ footer .region {
 	display: inline-flex;
 	justify-content: space-around;
     	border-bottom: 1px solid white;
+    	padding: 0px 130px;
 	flex-direction: row;
     	align-items: flex-start;
-	flex-wrap: wrap;
 }
 footer h2 {
 	color: white;
@@ -292,14 +297,13 @@ footer h2 {
 }
 
 footer li:first-of-type {
-	padding-top: 7px;
+	padding-top: 15px;
 }
 footer li:hover {
 	text-decoration: underline;
 }
 footer nav {
-	padding: 0 90px 32px;
-	min-width: 250px;
+	padding: 0 32px;
 }
 footer .nav li a {
 	padding: 0;
@@ -331,7 +335,6 @@ footer .nav > li > a:hover, .nav > li > a:focus {
 }
 
 .footer {
-	padding: 35px 0 36px;
 	margin-top: 0px;
 	border-top: solid #f1f1f1 0px;
 }

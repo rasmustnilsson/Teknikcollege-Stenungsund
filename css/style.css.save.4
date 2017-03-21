@@ -37,7 +37,7 @@ body {
     margin: 0;
     padding: 0;
 }
-body .main-container {
+body .main-container > .row {
 	padding-top: 68px;
 }
 #navbar {
@@ -48,6 +48,7 @@ body .main-container {
 	border-radius: 0;
 	padding: 0;
 	z-index: 5;
+	position: fixed;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.48);
 }
 #navbar > div {
@@ -150,6 +151,10 @@ body .main-container {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+footer {
+	min-width: 100%;
+}
+
 .programDiv h2 {
 	margin: 0;
 	padding: 45px 16px;
@@ -161,11 +166,11 @@ body .main-container {
 	background-color: #29568f;
 	text-align: center;
 	color: white;
-	margin: 0;
+	margin-top: 32px;
 
 }
 .divMap {
-	display: flex;
+	isplay: flex;
 	justify-content: center;
 }
 .divMap:first-of-type {
@@ -272,40 +277,21 @@ body .main-container {
 }
 footer {
 	background-color: #333;
-	display: flex;
-	justify-content: center;
 }
 footer .region {
-	display: inline-flex;
+	display: flex;
 	justify-content: space-around;
-    	border-bottom: 1px solid white;
-	flex-direction: row;
-    	align-items: flex-start;
-	flex-wrap: wrap;
 }
 footer h2 {
 	color: white;
-	border-bottom: 1px solid #d39100;
-	padding-right: 50px;
-	margin: 0;
-	line-height: 32px;
-}
-
-footer li:first-of-type {
-	padding-top: 7px;
+	border-bottom: 1px solid;
 }
 footer li:hover {
 	text-decoration: underline;
 }
-footer nav {
-	padding: 0 90px 32px;
-	min-width: 250px;
-}
 footer .nav li a {
-	padding: 0;
+	padding: 10px 0;
 	color: #ffffff;
-	font-size: 16px;
-	line-height: 2;
 }
 footer .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
@@ -328,46 +314,4 @@ footer .nav > li > a:hover, .nav > li > a:focus {
 		width: 100%;
 		margin: 0;
 	}
-}
-
-.footer {
-	padding: 35px 0 36px;
-	margin-top: 0px;
-	border-top: solid #f1f1f1 0px;
-}
-
-.views-row:nth-of-type(2n) {
-	background-color: #f1f1f1;
-}
-
-.views-row:nth-of-type(2n) p {
-	color: #333;
-}
-
-.views-row {
-	background-color: #333;
-}
-
-.views-row p {
-	color: #f1f1f1;
-}
-
-.views-row a {
-	color: #f1f1f1;
-}
-
-.views-row a:hover {
-	color: #D39100;
-}
-
-.views-row:nth-of-type(2n) a {
-	color: #333;
-}
-
-body .main-container > .row {
-	padding-top: 0px;
-}
-
-.main-container .row {
-	border-bottom: none;
 }
