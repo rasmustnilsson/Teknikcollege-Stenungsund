@@ -16,8 +16,8 @@
     1. mv Teknikcollege-Stenungsund teknikcollege
 
 ##### 5. Aktivera sub-temat i drupal.
-    1.    Logga in i drupal.
-    2.   Gå till appearance.
+    1.  Logga in i drupal.
+    2.  Gå till appearance.
     3.  Scrolla längst ner och tryck install och set as default på teknikcollege.
     
 ## För att använda backup-fil
