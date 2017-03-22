@@ -133,61 +133,73 @@ body .main-container {
 	margin: 0;
 	width: 100%;
 }
-#block-varaprogram {
-	width: 100%;
-}
-.programDiv {
-	margin: 32px;
-	display: inline-flex;
-    justify-content: center;
-	width: 300px;
-	background-color: #29568f;
-	color: white;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-.programDiv:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.view-program-rutor .views-row {
+    width: initial;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: calc(50% - 32px);
+    padding: 32px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.programDiv h2 {
-	margin: 0;
-	padding: 45px 16px;
-	text-align: center;
-}
-#block-varaprogram .field > h2 {
-	padding: 8px;
-	box-shadow: 0 3px 4px rgba(0, 0, 0, 0.28);
-	background-color: #29568f;
-	text-align: center;
-	color: white;
-	margin: 0;
-
-}
-.divMap {
-	display: flex;
-	justify-content: center;
-}
-.divMap:first-of-type {
-    margin-top: 16px;
+.view-program-rutor .views-row span {
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 30px;
+    color: white;
 }
 
-.views-row a {
+.view-program-rutor .views-row .views-field {
+     display: inherit;
+     display: inline-block;
+     padding: 45px 16px;
+     width: 300px;
+     background-color: #29568f;
+     text-align: center;
+     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.view-program-rutor .views-row:nth-of-type(2n) {
+    justify-content: flex-start;
+}
+
+.view-program-rutor .views-row .views-field:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.block-views-blockprogram-rutor-block-1 h2 {
+    padding: 8px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.28);
+    background-color: #29568f;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.view-program-rutor .view-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.view-om-programmen .views-row a {
 	font-size: 46px;
 	line-height: 48px;
 	color: #333;
 }
 
-.views-row a:hover, .views-row a:focus {
+.view-om-programmen .views-row a:hover, .views-row a:focus {
     color: #23527c;
     text-decoration: underline;
 }
 
-.views-row:nth-of-type(2n) a:hover, .views-row:nth-of-type(2n) a:focus {
+.view-om-programmen .views-row:nth-of-type(2n) a:hover, .views-row:nth-of-type(2n) a:focus {
    color: #D39100;
 }
 
-.views-row p {
+.view-om-programmen .views-row p {
     max-width: 650px;
 	line-height: 24px;
     font-size: 16px;
@@ -206,7 +218,7 @@ body .main-container {
 	width: 100%;
 }
 
-.views-row {
+.view-om-programmen .views-row {
     display: flex;
     justify-content: center;
 	align-items: center;
@@ -215,7 +227,7 @@ body .main-container {
 	background-color: #f1f1f1;
 }
 
-.views-row:nth-of-type(2n) {
+.view-om-programmen .views-row:nth-of-type(2n) {
     background-color: #333;
 
 }
@@ -262,7 +274,6 @@ footer .region {
 footer h2 {
 	color: white;
 	border-bottom: 1px solid #d39100;
-	padding-right: 50px;
 	margin: 0;
 	line-height: 32px;
 }
@@ -276,6 +287,7 @@ footer li:hover {
 footer nav {
 	padding: 0 90px 32px;
 	min-width: 250px;
+	box-sizing: content-box;
 }
 footer .nav li a {
 	padding: 0;
@@ -285,6 +297,11 @@ footer .nav li a {
 }
 footer .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
+}
+@media screen and (max-width: 860px) {
+	footer nav {
+		padding: 0 60px 32px;
+	}
 }
 
 @media (min-width: 768px) {
@@ -315,27 +332,27 @@ footer .nav > li > a:hover, .nav > li > a:focus {
 	border-top: solid #f1f1f1 0px;
 }
 
-.views-row:nth-of-type(2n) {
+.view-om-programmen .views-row:nth-of-type(2n) {
 	background-color: #f1f1f1;
 }
 
-.views-row:nth-of-type(2n) p {
+.view-om-programmen .views-row:nth-of-type(2n) p {
 	color: #333;
 }
 
-.views-row {
+.view-om-programmen .views-row {
 	background-color: #333;
 }
 
-.views-row p {
+.view-om-programmen .views-row p {
 	color: #f1f1f1;
 }
 
-.views-row a {
+.view-om-programmen .views-row a {
 	color: #f1f1f1;
 }
 
-.views-row a:hover {
+.view-om-programmen .views-row a:hover {
 	color: #D39100;
 }
 
