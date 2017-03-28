@@ -37,9 +37,7 @@ body {
     margin: 0;
     padding: 0;
 }
-body .main-container {
-	padding-top: 68px;
-}
+
 #navbar {
     margin: 0;
 	width: 100%;
@@ -154,7 +152,7 @@ body .main-container {
     justify-content: flex-end;
 }
 
-.view-program-rutor .views-row span {
+.view-program-rutor .views-row span, .view-program-rutor .views-row span a {
     font-weight: 500;
     line-height: 1.1;
     font-size: 30px;
@@ -224,8 +222,7 @@ body .main-container {
 }
 
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    max-width: 25vw;
-    height: none;
+
 }
 
 .views-row, .view-content, .view, .views-element-container {
@@ -292,7 +289,6 @@ footer h2 {
 	color: white;
 	border-bottom: 1px solid #d39100;
 	margin: 0;
-	line-height: 48px;
 }
 
 footer ul li:first-of-type {
@@ -374,7 +370,7 @@ footer .nav > li > a:hover, .nav > li > a:focus {
 	color: #D39100;
 }
 
-.views-row:nth-of-type(2n) a {
+.view-om-programmen .views-row:nth-of-type(2n) a {
 	color: #333;
 }
 
