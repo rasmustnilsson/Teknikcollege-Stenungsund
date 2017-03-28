@@ -1,29 +1,28 @@
-<!-- @file Instructions on how to sub-theme the Drupal Bootstrap base theme using the CDN Starterkit. -->
-<!-- @defgroup sub_theming_cdn -->
-<!-- @ingroup sub_theming -->
-# CDN Starterkit
+# TeknikCollege-Stenungsunds drupal subtheme
 
-The CDN Starterkit is rather simple to set up. You don't have to do anything
-until you wish to override the default [Drupal Bootstrap] base theme settings
-or provide additional custom CSS.
+## Instruktioner för användning:
 
-- [Prerequisite](#prerequisite)
-- [Override Styles](#styles)
-- [Override Settings](#settings)
-- [Override Templates and Theme Functions](#registry)
+##### 1. Installera installera sub-temat.
+    1. cd /var/www/html/themes eller cd /var/www/tcstenungsund/themes
+    2. drush dl bootstrap
+    3. drush en bootstrap
+    
+##### 2. Klona projektet.
+    1. git clone https://github.com/tachnik/Teknikcollege-Stenungsund.git
 
-## Prerequisite
-Read the @link subtheme Sub-theming @endlink parent topic.
+##### 3. Bytnamn på mappen.
+    1. mv Teknikcollege-Stenungsund teknikcollege
 
-## Override Styles {#styles}
-Open `./THEMENAME/css/style.css` and modify the file to your liking.
+##### 4. Aktivera sub-temat i drupal.
+    1.  Logga in i drupal.
+    2.  Gå till appearance.
+    3.  Scrolla längst ner och tryck install och set as default på teknikcollege.
+    
+## För att använda backup-fil
 
-## Override Settings {#settings}
-Please refer to the @link theme_settings Sub-theme Settings @endlink topic.
+##### 1. Kopiera filen til rätt mapp.
+    1. cd /var/www/html/themes/teknikcollege
+    2. cp (namnet på filen ex. backup.tar) backup.tar /var/www/
 
-## Override Templates and Theme Functions {#registry}
-Please refer to the @link registry Theme Registry @endlink topic.
-
-[Drupal Bootstrap]: https://www.drupal.org/project/bootstrap
-[Bootstrap Framework]: http://getbootstrap.com
-[jsDelivr CDN]: http://www.jsdelivr.com
+##### 2. Starta backupen.
+    1. sudo drush archive-restore ./backup.tar --debug --overwrite --p --destination=/var/www/html
