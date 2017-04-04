@@ -214,7 +214,7 @@ footer {
 }
 
 .views-field-field-body {
-	padding-left: 300px;
+	padding-left: 100px;
 }
 .view-om-programmen .views-field-body {
 	padding-left: 300px;
@@ -374,3 +374,17 @@ body .main-container > .row {
 .main-container .row {
 	border-bottom: none;
 }
+
+@media screen and (max-width: 1050px) {
+	.views-row {
+		display: flex;
+		flex-direction: column;
+		jusify-content
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.views-field-field-body {
+		padding-left: 0px
+	}
+}	
