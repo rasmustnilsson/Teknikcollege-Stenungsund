@@ -149,6 +149,7 @@ body {
     min-width: calc(50% - 32px);
     padding: 32px;
     display: flex;
+
     justify-content: flex-end;
 }
 
@@ -390,7 +391,12 @@ body .main-container > .row {
 	.views-row {
 		display: flex;
 		flex-direction: column;
-		jusify-content
+		jusify-content:;
+		align-items: flex-start !important;
+	}
+
+	.img-responsive {
+		margin-bottom: 20px;
 	}
 }
 
@@ -399,3 +405,4 @@ body .main-container > .row {
 		padding-left: 0px
 	}
 }	
+
