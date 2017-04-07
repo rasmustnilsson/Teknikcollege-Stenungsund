@@ -2,7 +2,7 @@
 		Drupal.behaviors.myModuleBehavior = {
 			attach: function (centext, settings) {
 				var windowHeight = window.innerHeight;
-				var flexsliderCss = "$('.views-field-field-flexslider-bild > div')";
+				var flexsliderCss = $('.views-field-field-flexslider-bild > div');
 				function flexSHeight(){
 					var menuHeight = $(".region-navigation-collapsible").height();
 					$(".views-field-field-flexslider-bild > div img").one("load", function() {
