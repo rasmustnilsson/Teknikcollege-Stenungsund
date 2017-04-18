@@ -406,3 +406,11 @@ body .main-container > .row {
 	}
 }	
 
+.view-kontaktuppgifter .field-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.view-kontaktuppgifter .field-content div {
+    padding-left: 24px;
+}
