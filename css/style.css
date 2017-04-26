@@ -161,20 +161,26 @@ body {
     align-items: stretch;
     flex-direction: row;
 }
-
-.view-program-rutor .views-row span, .view-program-rutor .views-row span a {
+.view-program-rutor .views-row span {
+	width: 100%;
+}
+.view-program-rutor .views-row span a {
     font-weight: 500;
     line-height: 1.1;
     font-size: 30px;
     color: white;
+	padding: 32px 16px;
+	display: block;
 }
 .view-program-rutor .views-row span:hover {
-	text-decoration: underline;
 	cursor: pointer;
 }
 
+.view-program-rutor .views-row span a:hover {
+	text-decoration: none;
+}
+
 .view-program-rutor .views-row .views-field {
-     padding: 32px 16px;
      width: 300px;
 	display: flex;
 	align-items: center;
@@ -381,9 +387,16 @@ footer .nav > li > a:hover, .nav > li > a:focus {
 	.navbar-nav, #block-teknikcollege-main-menu {
 		width: 100%;
 		margin: 0;
+		flex-direction: column;
 	}
 	.navbar-btn {
 		display: none;
+	}
+	#navbar .navbar-nav > li .is-active::after {
+		box-shadow: none;
+	}
+	#block-teknikcollege-main-menu li {
+		max-width: none;
 	}
 }
 
