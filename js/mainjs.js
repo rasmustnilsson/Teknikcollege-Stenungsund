@@ -1,7 +1,7 @@
 	(function ($) {
 		Drupal.behaviors.myModuleBehavior = {
 			attach: function (centext, settings) {
-				$(".slides").append("<a class='ctaText' href='node/1'>Om Teknikcollege</a>");
+				$(".slides").append("<div class='ctaText'><a href='node/1'>Om Teknikcollege</a><a href='kontakta_oss'>Kontakta oss</a></div>");
 				var windowHeight = window.innerHeight;
 				var flexsliderCss = $('.views-field-field-flexslider-bild > div');
 				function flexSHeight(){
