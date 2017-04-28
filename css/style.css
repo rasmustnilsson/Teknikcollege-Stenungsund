@@ -481,6 +481,7 @@ a.flex-next, a.flex-prev {
 	padding: 11px 24px;
 	background-color: #9E1B34;
 	margin: 0 14px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.34);
 	transform: perspective(1px) translateZ(0);
 	transition-property: color;
 	transition-duration: 0.15s;
