@@ -204,7 +204,7 @@ body {
 }
 
 .view-om-programmen .views-row a {
-	font-size: 47px;
+	font-size: 48px;
 	line-height: 48px;
 	color: #e5e5e5;
 }
@@ -230,7 +230,7 @@ body {
 	padding-left: 100px;
 }
 .view-om-programmen .views-field-body {
-	padding-left: 125px;
+	padding-left: 100px;
 }
 
 .views-row, .view-content, .view, .views-element-container {
@@ -464,8 +464,11 @@ a.flex-next, a.flex-prev {
 .ctaText a:nth-of-type(2) {
 	background-color: #29568F;
 }
-.ctaText a:hover {
+.ctaText a:hover, .ctaText a:focus {
 	text-decoration: none;
+}
+.ctaText a:active {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.34), inset 0 0 10px 0px rgba(0, 0, 0, 0.4);
 }
 .ctaText a:before {
 	width: 100%;
@@ -496,4 +499,8 @@ a.flex-next, a.flex-prev {
 
 article[about='/tcstenungsund/node/1'] p, article[about='/tcstenungsund/node/1'] h1, article[about='/tcstenungsund/node/1'] h2, article[about='/tcstenungsund/node/1'] h3, article[about='/tcstenungsund/node/1'] h4, article[about='/tcstenungsund/node/1'] h5, article[about='/tcstenungsund/node/1'] h6 {
     max-width: 650px;
+}
+@media (min-width: 768px) {
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: right;
 }
